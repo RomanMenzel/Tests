@@ -1,3 +1,5 @@
 ### These are a few tests of different programming languages
 
-⋅⋅*Unordered sub-list. 
+* Bullet 1
+* Bullet 2
+
