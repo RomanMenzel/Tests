@@ -1,6 +1,6 @@
 ### These are a few tests of different programming languages
 
 
-```c
+```ruby
 puts "This is code"
 ```
