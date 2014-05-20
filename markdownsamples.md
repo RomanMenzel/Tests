@@ -7,6 +7,7 @@
 
 Code highlighting
 
+Ruby
 ```ruby
 puts "Hello World"
 ```
