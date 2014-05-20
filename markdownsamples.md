@@ -5,9 +5,6 @@
 ###### Header 5
 ####### Header 6
 
-Code highlighting
-
-
 ```ruby
 puts "Hello World"
 ```
@@ -17,3 +14,6 @@ printf("Hello World");
 ```python
 print "Hello World"
 ```
+* Bullet 1
+* Bullet 2
+* Bullet 3
