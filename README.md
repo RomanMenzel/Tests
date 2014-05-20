@@ -1,6 +1,3 @@
 ### These are a few tests of different programming languages
 
-
-```ruby
-puts "This is code"
-```
+⋅⋅* Unordered sub-list. 
