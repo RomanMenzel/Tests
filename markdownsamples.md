@@ -7,7 +7,13 @@
 
 Code highlighting
 
-Ruby
+
 ```ruby
 puts "Hello World"
+```
+```c
+printf("Hello World");
+```
+```python
+print "Hello World"
 ```
