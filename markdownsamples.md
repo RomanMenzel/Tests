@@ -17,4 +17,4 @@ print "Hello World"
 * Bullet 2
 * Bullet 3
 
-[Github.com:](https://github.com/) 
+[Github.com](https://github.com/) 
