@@ -26,4 +26,4 @@ print "Hello World"
 | line 3        | and so on 3   | no idea 3 |
 
 [ ] Box 1
-[x] Box 2
+[ x ] Box 2
