@@ -3,13 +3,12 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define HOBBYLEN 20
 #define LEN 20
 
 int main() {
 
 	struct human {
-		char hobby[HOBBYLEN];
+		char hobby[20];
 		char name[20];
 		float geb;
 	};
