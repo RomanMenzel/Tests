@@ -1,3 +1,5 @@
+/* (c) Roman Menzel $- 30.5.14 at 17:10:12 -$ */
+
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
