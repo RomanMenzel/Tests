@@ -7,7 +7,7 @@ char nullbyte(char* text) {
 	return 0;
 }
 
-int stringcase(char* a, char* b, char* c);
+int comparison(char* a, char* b, char* c);
 
 int main() {
 
@@ -19,14 +19,14 @@ int main() {
 	fgets(hallo2, 19, stdin);
 	fgets(hallo3, 19, stdin);
 
-	int test=stringcase(hallo1, hallo2, hallo3);
+	int test=comparison(hallo1, hallo2, hallo3);
 
 	printf("%i\n", test);
 
 	return 0;
 }
 
-int stringcase(char* a, char* b, char* c) {
+int comparison(char* a, char* b, char* c) {
 	int result;
 	nullbyte(a);
 	nullbyte(b);
