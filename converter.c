@@ -78,6 +78,7 @@ int main() {
 			
 		case 'n':
 			printf("01101110");
+			break;
 			
 		case 'o':
 			printf("01101111");
