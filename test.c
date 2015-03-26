@@ -9,8 +9,6 @@ int main() {
 	};
 
 	int a;
-	int b;
-	int c;
 
 	for(a=0; a<3; a++) {
 		printf("%s %s\n", array[a], array[a][1]);
