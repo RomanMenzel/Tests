@@ -93,7 +93,7 @@ void find_piece(char* string) {
 				ppointer++;
 				continue;
 			}
-			printf("Piece found!\n");
+			printf("Piece found, beginning at place %i!\n", x);
 			exit(0);
 		}		
 		else {
