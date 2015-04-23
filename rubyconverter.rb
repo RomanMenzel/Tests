@@ -42,7 +42,7 @@ alphabet = {  "a" => "01100001",
 x = String.new
 
 string.each_char do |char|
-	if alphabet.keys.any? { |var| char == var}
+	if alphabet.keys.any? { |var| char == var }
 		x << alphabet[char]
 	else
 		x << char
