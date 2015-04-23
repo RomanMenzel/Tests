@@ -1,10 +1,9 @@
 if ARGV.length != 1
-	puts "Usage: ruby rubyconverter.rb <string>"
+	puts "Usage: ruby rubyconverter.rb <string lowercased>"
 	exit
 end	
 
-string = ARGV[0].to_s
-
+string = ARGV[0].downcase.to_s
 
 alphabet = {  "a" => "01100001",
 			  "b" => "01100010",
@@ -37,12 +36,18 @@ alphabet = {  "a" => "01100001",
 			  "." => "00101110",
 			  " " => "00100000",
 			  "'" => "00100111",
-			  "," => "00101100"  }
+			  "," => "00101100",  
+			  ";" => "00111011"  }
 
 x = String.new
 
 string.each_char do |char|
-	x << alphabet[char]
+	if alphabet.keys.any? { |var| char == var}
+		x << alphabet[char]
+	else
+		x << char
+	end
+	
 end
 
 puts "The converted string:"
