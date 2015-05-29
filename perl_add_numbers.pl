@@ -4,3 +4,7 @@ sub add {
     }
     return $result;
 }
+
+$num = add(1, 2, 3);
+print $num;
+
