@@ -22,25 +22,22 @@ void print_field(void) {
 
 void player_one(void) {
   char a[10];
-  printf("Player one [x]: ");
+  printf("\nPlayer one [x]: ");
   
-  int b = atoi(fgets(a, 9, stdin));
+  fgets(a, 9, stdin);
+  int b = atoi(a);
 
   if(b <= 0) {
     puts("This place doesn't exist!");
     printf("Press enter to continue...");
     getchar();
     player_one();
-  }
-  
-  if(b > 9) {
+  } else if(b > 9) {
     puts("This place doesn't exist!");
     printf("Press enter to continue...");
     getchar();
     player_one();
-  }
-
-  if(field[b-1] == 'o' || field[b-1] == 'x') {
+  } else if(field[b-1] == 'o' || field[b-1] == 'x') {
     puts("This place is already occupied!");
     printf("Press enter to continue...");
     getchar();
@@ -52,7 +49,7 @@ void player_one(void) {
 
 void player_two(void) {
   char a[10];
-  printf("Player one [o]: ");
+  printf("\nPlayer two [o]: ");
   
   int b = atoi(fgets(a, 9, stdin));
 
@@ -60,21 +57,17 @@ void player_two(void) {
     puts("This place doesn't exist!");
     printf("Press enter to continue...");
     getchar();
-    player_two();
-  }
-
-  if(b > 9) {
+    player_one();
+  } else if(b > 9) {
     puts("This place doesn't exist!");
     printf("Press enter to continue...");
     getchar();
-    player_two();
-  }
-
-  if(field[b-1] == 'o' || field[b-1] == 'x') {
+    player_one();
+  } else if(field[b-1] == 'o' || field[b-1] == 'x') {
     puts("This place is already occupied!");
     printf("Press enter to continue...");
     getchar();
-    player_two();
+    player_one();
   } else {
     field[b-1] = 'o';
   }
